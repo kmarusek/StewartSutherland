@@ -1,0 +1,45 @@
+
+{
+  "address-1": "P.O. BOX 162",
+  "address-2": "5411 E. V Avenue",
+  "address-3": "Vicksburg, MI 49097",
+  "address-4": "(269) 649 - 0530",
+  "sections": [
+    { 
+      "title": "Home",
+      "title_url": "/",
+      "infos": []
+    },
+    { 
+      "title": "About",
+      "title_url": "/about",
+      "infos": []
+    },
+    {
+      "title": "Team", 
+      "title_url": "/team",
+      "infos": [] 
+    },
+    {
+      "title": "Products", 
+      "title_url": "/products",
+      "infos": []
+    },
+    {
+      "title": "Quality", 
+      "title_url": "/quality",
+      "infos": []
+    },
+    {
+      "title": "Employment", 
+      "title_url": "/employment",
+      "infos": []
+    },
+    {
+      "title": "Contact",
+      "title_url": "/contact",
+      "infos": [] 
+    }
+  ],
+  "trademark": "2020 Stewart Sutherland, Inc. Designed By Above Media"
+}

@@ -1,0 +1,29 @@
+@tailwind components;
+
+.collapsing__trigger .arrow-up {
+  color: rgb(120, 119, 119);
+  padding-top: 3px;
+  transition: transform 330ms;
+}
+.collapsing__trigger--is-open .arrow-up {
+  transform: rotateZ(180deg);
+}
+
+.collapsing__trigger--is-open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.collapsing__inner {
+  border-top: 1px solid #f3f3f5;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.collapsing__inner > div {
+  border-bottom: 1px solid #f3f3f5;
+}
+
+.collapsing__inner > div:last-child {
+  border-bottom: none;
+}

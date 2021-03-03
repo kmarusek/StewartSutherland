@@ -1,0 +1,57 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 9,
+    "ecmaFeatures": {
+      "experimentalDecorators": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "extends": ["standard", "standard-jsx", "prettier", "prettier/react"],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "react/prop-types": 0,
+    "max-len": [
+      "warn",
+      {
+        "code": 150,
+        "tabWidth": 2,
+        "ignoreUrls": true
+      }
+    ],
+    "comma-dangle": ["error", {
+      "arrays": "always",
+      "objects": "always",
+      "imports": "never",
+      "exports": "never",
+      "functions": "never"
+    }],
+    "indent": [2, 2, { "SwitchCase": 1 }],
+    "function-paren-newline": ["error", "consistent"],
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+    "semi": ["error", "never"],
+    "standard/no-callback-literal": "off",
+    "jsx-quotes": ["error", "prefer-single"],
+    "space-before-function-paren": [
+      "error",
+      { "anonymous": "ignore", "named": "never", "asyncArrow": "always" }
+    ],
+    "no-unused-vars": ["warn", { "args": "none" }],
+    "prettier/prettier": [
+      "off",
+      {
+        "semi": false,
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 95,
+        "tabWidth": 2,
+        "arrowParens": "avoid",
+        "jsxBracketSameLine": false
+      }
+    ]
+  }
+}

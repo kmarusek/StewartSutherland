@@ -1,0 +1,247 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Bakery, Grocery And Deli",
+      "products": [
+        {
+          "id": 1001,
+          "name": "Window Panel Bags"
+        },
+        {
+          "id": 1002,
+          "name": "Non Waxed Pinch Bottom Bags"
+        },
+        {
+          "id": 1003,
+          "name": "Waxed Pinch Bottom Bags"
+        },
+        {
+          "id": 1004,
+          "name": "Plain Waxed Automatic"
+        },
+        {
+          "id": 1005,
+          "name": "Pickle Bags"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Fast Food And Concessions",
+      "products": [
+        {
+          "id": 2001,
+          "name": "Sandwich, Fry & Burger Bags"
+        },
+        {
+          "id": 2002,
+          "name": "Hot Dog Bags"
+        },
+        {
+          "id": 2003,
+          "name": "Wraps & Basket Liners"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Pizza, Subs And Take Out",
+      "products": [
+        {
+          "id": 3001,
+          "name": "Pizza Bags"
+        },
+        {
+          "id": 3002,
+          "name": "Sub & Breadstick Bags"
+        },
+        {
+          "id": 3003,
+          "name": "Sub Wraps"
+        },
+        {
+          "id": 3004,
+          "name": "Take Out Bags"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Silverware",
+      "products": [
+        {
+          "id": 4001,
+          "name": "Silverware Bags"
+        }
+      ]
+    }
+  ],
+  "product_items": [
+    {
+      "pid": 1001,
+      "description": "Made from Natural Kraft(NATKR) with a Polypropylene window.",
+      "items": [ 
+        {"stock": "632WDN",	"size": "6.5 X 2 X 18",	"description": "Wheat Design", "pack": "1M", "wt/cs":	"22", "cube":	"1.508"},
+        {"stock": "642WDN",	"size": "6.5 X 3 X 22",	"description": "Wheat Design", "pack": "500", "wt/cs":	"16", "cube": "0.998"},
+        {"stock": "814WDN",	"size": "8.5 X 3 X 14",	"description": "Wheat Design", "pack": "1M", "wt/cs":	"24",	"cube": "1.678"},
+        {"stock": "520WDN",	"size": "5.25 X 3.25 X 20", "description": "Wheat Design", "pack": "1M", "wt/cs":	"26.8",	"cube":	"1.582"},
+        {"stock": "324WDN",	"size": "3.5 X 2 X 24",	"description": "Wheat Design", "pack": "1M", "wt/cs":	"20",	"cube":	"1.147"},
+        {"stock": "326WDN",	"size": "3.5 X 2 X 26",	"description": "Wheat Design", "pack": "500", "wt/cs":	"11.5",	"cube":	"0.871"},
+        {"stock": "424WDN",	"size": "4.5 X 2.5 X 24",	"description": "Wheat Design", "pack": "1M", "wt/cs":	"24",	"cube":	"1.459"},
+        {"stock": "428WDN",	"size": "4.5 X 2.5 X 28",	"description": "Wheat Design", "pack": "1M", "wt/cs":	"30.6",	"cube":	"1.459"}
+      ]
+    },
+    {
+      "pid": 1002,
+      "description": "Made from Bleached Kraft(BLKR).",
+      "items": [ 
+        {"stock": "524", "size":	"5 X 3 X 18", "description": "Plain", "pack": "1M",	"wt/cs": "24", "cube": "1.222"},
+        {"stock": "527", "size":	"5.25 X 3.25 X 18", "description": "Plain",	"pack": "1M",	"wt/cs": "25.5", "cube": "1.222"},
+        {"stock": "528", "size":	"5.25 X 3.25 X 20", "description": "Plain", "pack":	"1M",	"wt/cs": "28",	"cube": "1.582"},
+        {"stock": "532", "size":	"6 X 3.5 X 18", "description": "Plain", "pack":	"1M",	"wt/cs": "28.5",	"cube": "1.352"},
+        {"stock": "533", "size":	"6 X 3.5 X 20", "description": "Plain", "pack":	"1M",	"wt/cs": "31.5",	"cube": "1.377"},
+        {"stock": "537", "size":	"8.5 X 4.5 X 14", "description": "Plain", "pack":	"1M",	"wt/cs": "30.5",	"cube": "1.678"},
+        {"stock": "538", "size":	"4.5 X 2.5 X 24", "description": "Plain", "pack":	"1M",	"wt/cs": "28",	"cube": "1.135"}
+      ]
+    },
+    {
+      "pid": 1003,
+      "description": "Made from Bleached Kraft(BLKR) and Waxed.",
+      "items": [ 
+        {	"stock":"609PP",	"size":"5.25 X 3.25 X 12",	"description":"Plain",	"pack":"1M",	"wt/cs":"20",	"cube":"0.975"},
+        {	"stock":"613PP",	"size":"6 X 3.5 X 14.5",	"description":"Plain",	"pack":"1M",	"wt/cs":"28",	"cube":"1.161"},
+        {	"stock":"614PP",	"size":"6 X 3.5 X 16",	"description":"Plain",	"pack":"1M",	"wt/cs":"29",	"cube":"1.377"},
+        {	"stock":"615PP",	"size":"6 X 3.5 X 18",	"description":"Plain",	"pack":"1M",	"wt/cs":"32",	"cube":"1.377"},
+        {	"stock":"620PP",	"size":"9.25 X 2.25 X 14",	"description":"Plain Waxed",	"pack":"1M",	"wt/cs":"31",	"cube":"1.293"},
+        {	"stock":"AG620",	"size":"9.25 X 2.25 X 14",	"description":"America's Grains Design",	"pack":"1M",	"wt/cs":"31",	"cube":"1.293"}
+      ]
+    },
+    {
+      "pid": 1004,
+      "description": "Made from Bleached Kraft(BLKR) and Waxed.",
+      "items": [
+        {	"stock":"04PP",	"size":"4#",	"description":"Plain",	"pack":"1M",	"wt/cs":"19",	"cube":"1.009"},
+        {	"stock":"06PP",	"size":"6#",	"description":"Plain",	"pack":"1M",	"wt/cs":"26.4",	"cube":"1.252"},
+        {	"stock":"08PP",	"size":"8#",	"description":"Plain",	"pack":"1M",	"wt/cs":"28.8",	"cube":"1.461"}
+      ]
+    },
+    {
+      "pid": 1005,
+      "description": "Made from Bleached Kraft(BLKR) and Waxed for Moisture Protection.",
+      "items": [
+        {	"stock":"749",	"size":"3 X 2 X 6.5",	"description":"It's a Dilly",	"pack":"2M",	"wt/cs":"13",	"cube":"0.450"}
+      ]
+    },
+    {
+      "pid": 2001,
+      "description": "Sandwich, Fry & Burger Bags",
+      "items": [ 
+        {	"stock":"03WC",	"size":"4.5 X 3.5",	"description":"Plain",	"pack":"2M",	"wt/cs":"4.5",	"cube":"0.227"},
+        {	"stock":"10WC",	"size":"6 X 4.5",	"description":"Plain",	"pack":"2M",	"wt/cs":"6",	"cube":"0.357"},
+        {	"stock":"253",	"size":"5 X 1.5 X 4.5",	"description":"French Fries Design",	"pack":"1M/8M",	"wt/cs":"28",	"cube":"3.609"},
+        {	"stock":"260",	"size":"5.5 X 1 X 8",	"description":"French Fries Design",	"pack":"1M/5M",	"wt/cs":"29.2",	"cube":"2.291"},
+        {	"stock":"204",	"size":"6 X .75 X 6.75",	"description":"Plain",	"pack":"1M/8M",	"wt/cs":"42",	"cube":"3.609"},
+        {	"stock":"204-2",	"size":"6 X .75 X 6.75",	"description":"Plain",	"pack":"2M",	"wt/cs":"10.5",	"cube":"0.831"},
+        {	"stock":"204-6",	"size":"6 X .75 X 6.75",	"description":"Plain",	"pack":"1M/6M",	"wt/cs":"31.5",	"cube":"2.636"},
+        {	"stock":"19WC",	"size":"6 X .75 X 7.25",	"description":"Plain",	"pack":"2M",	"wt/cs":"11.5",	"cube":"0.831"},
+        {	"stock":"265 (Waxed)",	"size":"6 X .75 X 6.75",	"description":"Plain",	"pack":"1M/6M",	"wt/cs":"36",	"cube":"1.595"},
+        {	"stock":"220-1",	"size":"7 X 6.75",	"description":"Plain Double Open",	"pack":"1M",	"wt/cs":"5.5",	"cube":"0.227"},
+        {	"stock":"25WC",	"size":"6.5 X 1 X 8",	"description":"Plain",	"pack":"2M",	"wt/cs":"14",	"cube":"0.893"},
+        {	"stock":"206",	"size":"6 X .75 X 6.75",	"description":"Plain Foil",	"pack":"1M",	"wt/cs":"9",	"cube":"0.599"},
+        {	"stock":"25WCN",	"size":"6.5 X 1 X 8",	"description":"Plain Natural",	"pack":"2M",	"wt/cs":"14",	"cube":"0.893"} 
+      ]
+    },
+    {
+      "pid": 2002,
+      "description": "Made from Light Weight Grease Resistant (GR) and Foil (FO) Paper.",
+      "items": [ 
+        {	"stock":"30WC2",	"size":"3 X 2 X 8.75",	"description":"Plain",	"pack":"2M",	"wt/cs":"10",	"cube":"0.599"},
+        {	"stock":"231",	"size":"3 X 2 X 8.75",	"description":"Its Delicious",	"pack":"1M",	"wt/cs":"5",	"cube":"0.328"},
+        {	"stock":"233",	"size":"3 X 2 X 8.75",	"description":"Its Delicious Foil",	"pack":"1M",	"wt/cs":"9",	"cube":"0.328"},
+        {	"stock":"234",	"size":"3 X 2 X 8.75",	"description":"Hot Dog Foil",	"pack":"1M",	"wt/cs":"9",	"cube":"0.328"},
+        {	"stock":"236",	"size":"3 X 2 X 12",	"description":"Its Delicious Foil",	"pack":"1M",	"wt/cs":"9",	"cube":"0.447"}
+      ]
+    },
+    {
+      "pid": 2003,
+      "description": "Made from Bleached Dry Wax(DW) or Light Weight Grease Resistant(GR) or Natural Grease Resistant Paper(NAT) or Foil(FO) Paper.",
+      "items": [
+        {	"stock":"2X12DW",	"size":"12 X 12",	"description":"Plain Dry Wax",	"pack":"1M/6M",	"wt/cs":"45",	"cube":"1.22"},
+        {	"stock":"12X12ST",	"size":"12 X 12",	"description":"Plain Grease Resistant",	"pack":"1M/5M",	"wt/cs":"34.5",	"cube":"0.881"},
+        {	"stock":"15X15DW",	"size":"15 X 15",	"description":"Plain Dry Wax",	"pack":"1M/3M",	"wt/cs":"34.5",	"cube":"1.079"},
+        {	"stock":"12X12DR",	"size":"12 X 12",	"description":"Red Check",	"pack":"1M/5M",	"wt/cs":"34.5",	"cube":"0.881"},
+        {	"stock":"12X12DG",	"size":"12 X 12",	"description":"Green Check",	"pack":"1M/5M",	"wt/cs":"34.5",	"cube":"0.881"},
+        {	"stock":"12X12DBL",	"size":"12 X 12",	"description":"Black Check",	"pack":"1M/5M",	"wt/cs":"34.5",	"cube":"0.881"},
+        {	"stock":"12X12NAT",	"size":"12 X 12",	"description":"Natural",	"pack":"1M/5M",	"wt/cs":"34.5",	"cube":"0.972"},
+        {	"stock":"10X13FO",	"size":"10.5 X 13",	"description":"Plain Foil",	"pack":"500/2.5M",	"wt/cs":"22",	"cube":"0.537"},
+        {	"stock":"14X16FO",	"size":"14 X 16",	"description":"Plain Foil",	"pack":"500/1M",	"wt/cs":"14",	"cube":"0.335"}
+      ]
+    },
+    {
+      "pid": 2004,
+      "description": "Made from Bleached Kraft (BLKR).",
+      "items": [
+        {	"stock":"402",	"size":"3.5 X 2 X 8",	"description":"Popcorn Design",	"pack":"1M",	"wt/cs":"8",	"cube":"0.419"}
+      ]
+    },
+    {
+      "pid": 3001,
+      "description": "Made from Bleached Kraft (BLKR).",
+      "items": [ 
+        {	"stock":"502V",	"size":"12 X 15",	"description":"Venice Design",	"pack":"1M",	"wt/cs":"30",	"cube":"1.283"},
+        {	"stock":"505V",	"size":"14 X 1 X 17",	"description":"Venice Design",	"pack":"1M",	"wt/cs":"40",	"cube":"2.254"},
+        {	"stock":"508V",	"size":"16 X 2 X 20",	"description":"Venice Design",	"pack":"500",	"wt/cs":"28",	"cube":"1.582"}
+      ]
+    },
+    {
+      "pid": 3002,
+      "description": "Made from Bleached Kraft(BLKR)",
+      "items": [ 
+        {	"stock":"254",	"size":"4.5 X 2 X 14",	"description":"Submarine Design",	"pack":"1M",	"wt/cs":"16",	"cube":"0.975"},
+        {	"stock":"254-12",	"size":"4.5 X 2 X 12",	"description":"Submarine Design",	"pack":"2M",	"wt/cs":"26",	"cube":"1.678"},
+        {	"stock":"254-16",	"size":"4.5 X 2 X 16",	"description":"Submarine Design",	"pack":"2M",	"wt/cs":"34",	"cube":"1.685"},
+        {	"stock":"254PL",	"size":"4.5 X 2 X 14",	"description":"Plain",	"pack":"1M",	"wt/cs":"16",	"cube":"0.975"},
+        {	"stock":"258",	"size":"5 X 3 X 12.5",	"description":"Breadstix Design",	"pack":"1M",	"wt/cs":"20",	"cube":"1.222"}
+      ]
+    },
+    {
+      "pid": 3003,
+      "description": "Made from Dry Wax(DW).",
+      "items": [
+        {	"stock":"15X15DW",	"size":"15 X 15",	"description":"Plain",	"pack":"1M/3M",	"wt/cs":"34.5",	"cube":"1.079"}
+      ]
+    },
+    {
+      "pid": 3004,
+      "description": "Made from Heavy Weight Foil/Kraft Lamination.",
+      "items": [ 
+        {	"stock":"741R",	"size":"4 X 3 X 10.1875",	"description":"Pint Hot/Cold Design",	"pack":"1M",	"wt/cs":"20",	"cube":"0.933"},
+        {	"stock":"742PL",	"size":"5.25 X 3.5 X 12",	"description":"Quart Plain",	"pack":"1M",	"wt/cs":"25.5",	"cube":"0.943"},
+        {	"stock":"742PL500",	"size":"5.25 X 3.5 X 12",	"description":"Quart Plain",	"pack":"500",	"wt/cs":"12.7",	"cube":"0.656"},
+        {	"stock":"742R",	"size":"5.25 X 3.5 X 12",	"description":"Quart Hot/Cold Design",	"pack":"1M",	"wt/cs":"25.5",	"cube":"0.943"},
+        {	"stock":"743R",	"size":"6.5 X 4.375 X 14",	"description":"1/2 Gallon Hot/Cold Design",	"pack":"1M",	"wt/cs":"37",	"cube":"1.484"}
+      ]
+    },
+    {
+      "pid": 4001,
+      "description": "Made from Bleached Kraft(BLKR) or Natural Kraft(NATKR)",
+      "items": [ 
+        {	"stock":"144",	"size":"2.75 X 10",	"description":"Plain Bleached",	"pack":"2M",	"wt/cs":"9",	"cube":"0.357"},
+        {	"stock":"145",	"size":"3 X 1 X 7",	"description":"Plain Natural",	"pack":"5M",	"wt/cs":"21",	"cube":"1.972"},
+        {	"stock":"146",	"size":"3 X 1 X 10",	"description":"Plain Natural",	"pack":"5M",	"wt/cs":"20.5",	"cube":"1.97"}
+      ]
+    }
+  ],
+  "glossary_of_terms": [
+    { "title": "Automatic", "content": "Also referred to as a Square Bottom, Carry Out or Self-Opening bag." },
+    { "title": "Basis Weight", "content": "The finished weight of a paper based on a consistent industry standard." },
+    { "title": "Dry Wax", "content": "A process in which the paper is waxed lightly on one side. The finished paper is also referred to as Dry Wax(ed)." },
+    {"title": "FDA Approved","content": "Paper that meets FDA 21 CFR requirements for direct/indirect food contact" },
+    {"title": "Gusset", "content": "The sides of a bag, sometimes referred to as bellows, which are measured when open from front to back." },
+    {"title": "Openside", "content": "A Pinch Bottom bag open on one side as well as the top, providing easy access for foods to be eaten directly from the package." },
+    {"title": "Pinch Bottom","content": "A bag style, available flat or gusseted, having a pinched bottom, as opposed to a formed square bottom." },
+    {"title": "PMS Colors", "content": "The Pantone Matching System is an international printing, publishing and packaging color language providing an accurate method for selecting and matching color." },
+    {"title": "Waxed","content": "A process in which wax is applied to paper." }
+  ]
+}

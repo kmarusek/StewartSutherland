@@ -1,0 +1,25 @@
+:root {
+  --red: #E61D30;
+  --red-light: #cd1041;
+  --primary: var(--red);
+  --primary-light: var(--red-light);
+  --dark: #22212d;
+  --dark-light: #262533;
+}
+/*! purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/*! purgecss end ignore */
+@tailwind utilities;
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
