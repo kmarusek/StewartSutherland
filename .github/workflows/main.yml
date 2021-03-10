@@ -18,9 +18,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-verions: ${{ matrix.node-version }}
-    - run: npm ci
     - name: Build Website
       run: 
+        npm ci
         yarn
         npm run build
     - name: Configure AWS credentials
