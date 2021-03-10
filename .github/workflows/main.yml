@@ -26,4 +26,4 @@ jobs:
     - name: Deploy to S3
       run: aws s3 sync public s3://${{ secrets.AWS_BUCKET_NAME }} --delete
     - name: Invalidate Cloudfront
-      run: aws cloudfront creat-invalidation --distribution-id ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
+      run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
