@@ -2,7 +2,7 @@ name: 102 Static Website Deployment
 on: 
   push:
     branches: [ main ]
-  pull: 
+  pull_request: 
     branches: [ main ]
 
 jobs: 
