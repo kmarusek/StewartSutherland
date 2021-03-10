@@ -11,10 +11,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-    - name: Node Install
-      run:
-        npm install
+    - uses: actions/setup-node@v2
+      with: 
+        node-verison: '14'
+    - run: npm install
+    - run: npm test
     - name: Build Website
       run: 
         yarn
