@@ -135,7 +135,7 @@ const SecondPage = () => {
         <div className='md:flex my-10'>
           <ImageWrapper className='w-full md:w-1/2 md:self-center lg:self-start'>
             <Img
-              fluid={data.sub2.childImageSharp.fluid}
+              fluid={data.sub4.childImageSharp.fluid}
               alt='product'
               className='h-48 lg:h-64 xl:h-full'
             />
@@ -177,7 +177,7 @@ const SecondPage = () => {
         <div className='md:flex my-10'>
           <ImageWrapper className='w-full md:w-1/2 md:self-center lg:self-start'>
             <Img
-              fluid={data.sub4.childImageSharp.fluid}
+              fluid={data.sub2.childImageSharp.fluid}
               alt='product'
               className='h-48 lg:h-64 xl:h-full'
             />
