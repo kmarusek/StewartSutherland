@@ -1,0 +1,23 @@
+.inner {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.image {
+    width: 32%;
+    margin-right: 1.5%;
+    margin-bottom: 4rem;
+}
+.image:nth-child(3){
+    margin-right: 0;
+}
+
+
+@media only screen and (max-width: 1279px){
+    .image{
+        width: 100%;
+        margin-right: 0;
+    }
+}
