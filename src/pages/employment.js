@@ -10,7 +10,8 @@ import { HeroContainer, Title } from '../components/SubIndex'
 import { Message } from '../components/MessageBar'
 import Img from 'gatsby-image'
 import JobApplication from '../assets/pdf/Standard-Application.pdf'
-
+import '../css/employment.css'
+import employVideo from '../assets/videos/stewart-sutherland-recruitment-video.mp4'
 
 const ImageWrapper = styled.div`
   @media (min-width: 768px) {
@@ -92,9 +93,39 @@ const SecondPage = () => {
         <HeroContainer>
           <Title className=''>{content.h1}</Title>
           <Border thick className='w-2/3 mt-2 bg-primary' />
+          <div className="buttonwrap">
+            <Button
+              variant='primary'
+              className='mt-4 ml-10'
+              onClick={gotoEmploymentApp}
+            >
+              {content['apply-btn']}
+            </Button>
+            <Button
+              variant='primary'
+              className='mt-4 ml-4'
+              onClick={gotoEmploymentApp}
+            >
+              {content['share-btn']}
+            </Button>
+            </div>
         </HeroContainer>
         <Message></Message>
       </div>
+      <div className='video-section mt-4'>
+          <video className='video' autoPlay loop muted controls>
+            <source src={employVideo} type='video/mp4'/>
+          </video>
+          <div className="video-button">
+            <Button
+              variant='primary'
+              className='mt-4'
+              onClick={gotoEmploymentApp}
+              >
+              {content['apply-btn']}
+            </Button>
+          </div>
+        </div>
       <div className='mt-8 container py-2 px-6 lg:px-10'>
         <h3 className='text-primary py-2 text-sm'>{content.company}</h3>
         <div className='text-3xl text-dark py-2 tracking-tight'>
@@ -120,13 +151,6 @@ const SecondPage = () => {
               {content['title-sub-1']}
             </h4>
             <p className='text-sm mt-4'>{content['info-sub-1']}</p>
-            <Button
-              variant='primary'
-              className='mt-4'
-              onClick={gotoEmploymentApp}
-            >
-              {content['apply-btn']}
-            </Button>
           </div>
         </div>
         <div className='md:flex md:flex-row-reverse my-10'>
@@ -148,13 +172,6 @@ const SecondPage = () => {
               {content['title-sub-2']}
             </h4>
             <p className='text-sm mt-4'>{content['info-sub-2']}</p>
-            <Button
-              variant='primary'
-              className='mt-4'
-              onClick={gotoEmploymentApp}
-            >
-              {content['apply-btn']}
-            </Button>
           </div>
         </div>
         <div className='md:flex my-10'>
@@ -176,18 +193,22 @@ const SecondPage = () => {
               {content['title-sub-3']}
             </h4>
             <p className='text-sm mt-4'>{content['info-sub-3']}</p>
+          </div>
+        </div>
+
+        <div className='bottom-section'>
+          <div className="itembox">
             <Button
               variant='primary'
-              className='mt-4'
+              className='mt-4 bottom-btn'
               onClick={gotoEmploymentApp}
             >
               {content['apply-btn']}
             </Button>
           </div>
-        </div>
-
-        <div className='flex justify-center lg:justify-center lg:mr-6 py-2'>
-          <a href={JobApplication} download className='text-right mb-2 bg-gray-200 p-2 rounded'>Download Application</a>
+          <div className="itembox">
+            <a href={JobApplication} download className='text-right mb-2 bg-gray-200 p-2 rounded'>Download Application</a>
+          </div>
         </div>
 
 
