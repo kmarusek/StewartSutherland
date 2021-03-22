@@ -7,6 +7,7 @@ import { Border } from '../components/IndexPage'
 import { Button } from '../components/Button'
 import { Footer } from '../components/Footer'
 import { HeroContainer, Title } from '../components/SubIndex'
+import { Message } from '../components/MessageBar'
 import Img from 'gatsby-image'
 import JobApplication from '../assets/pdf/Standard-Application.pdf'
 
@@ -92,6 +93,7 @@ const SecondPage = () => {
           <Title className=''>{content.h1}</Title>
           <Border thick className='w-2/3 mt-2 bg-primary' />
         </HeroContainer>
+        <Message></Message>
       </div>
       <div className='mt-8 container py-2 px-6 lg:px-10'>
         <h3 className='text-primary py-2 text-sm'>{content.company}</h3>

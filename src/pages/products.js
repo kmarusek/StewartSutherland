@@ -13,6 +13,8 @@ import { ProductTable } from '../components/Table'
 import qs from 'query-string'
 import { CardCollapsible } from '../components/CardCollapsible'
 import fileSSCatalogue from '../assets/pdf/SSCatalogue.pdf'
+import { Message } from '../components/MessageBar'
+import '../css/products.css'
 
 const ProductItems = styled.div`
   min-height: 315px;
@@ -112,12 +114,14 @@ const Products = ({ location, }) => {
             </p>
           </div>
         </HeroContainer>
+        <Message></Message>
+        
       </div>
       <div className='container p-6'>
         <h1 className='text-3xl text-center'>Stock Products</h1>
-        <div className='flex justify-center lg:justify-end lg:mr-6 py-2'>
+        {/* <div className='flex justify-center lg:justify-end lg:mr-6 py-2'>
           <a href={fileSSCatalogue} download className='text-right mb-2 bg-gray-200 p-2 rounded'>Download Catalogue</a>
-        </div>
+        </div> */}
         <div>
           {JSONCategories.categories.map((category, idx) => {
             // console.log('categoryId: ',categoryId)
@@ -127,10 +131,10 @@ const Products = ({ location, }) => {
             return (
               <div className='' key={category.id}>
                 <h3 className='text-center lg:text-left text-2xl text-primary'>{category.name}</h3>
-                <div className='md:w-1/2 md:mx-auto lg:mx-0 lg:w-1/3'>
+                <div className='md:w-1/2 md:mx-auto lg:mx-0 lg:w-full'>
                   <Img fluid={data[`category_${idx+1}`].childImageSharp.fluid}
                     alt='hero-image'
-                    className='rounded'
+                    className='rounded product-hero'
                   />
                 </div>
                 <CardWrapper className='py-4 flex justify-center lg:justify-between'>

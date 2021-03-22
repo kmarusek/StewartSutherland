@@ -5,6 +5,7 @@ import Img from 'gatsby-image'
 import { Border } from '../components/IndexPage'
 import { HeroContainer, Title } from '../components/SubIndex'
 import about from '../content/pages/about.json'
+import { Message } from '../components/MessageBar'
 import { Footer } from '../components/Footer'
 
 const Quality = () => {
@@ -57,6 +58,7 @@ const Quality = () => {
           </Title>
           <Border thick className='w-2/3 mt-2 bg-primary' />
         </HeroContainer>
+        <Message></Message>
       </div>
       <div className='container p-8 lg:p-12 p lg:p-16'>
         <div className='mt-6 md:mt-10 md:flex items-center'>

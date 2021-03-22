@@ -9,6 +9,7 @@ import { Heading3 } from '../components/Text'
 import { IndexCarousel } from '../components/IndexCarousel'
 import { FooterFlag } from '../components/FooterFlag'
 import { Footer } from '../components/Footer'
+import { Message } from '../components/MessageBar'
 import '../css/menu.css'
 
 const IndexPage = () => {
@@ -123,6 +124,7 @@ const IndexPage = () => {
             </div>
           </div>
         </HeroContainer>
+        <Message></Message>
       </div>
       <div className='block px-4 mt-4 lg:px-0 lg:mt-0 lg:flex mb-8'>
         <div className='w-full xl:w-1/2 md:flex mb-4 md:mb-0'>
@@ -182,7 +184,7 @@ const IndexPage = () => {
             className='xl:h-full'
           />
         </div>
-        <div className='md:w-1/2 py-4 pt-4 md:pt-0 lg:pt-4 pl-0 text-sm md:text-base'>
+        <div className='md:w-1/2 py-4 md:p-4 lg:pt-4 text-sm md:text-base'>
           <Heading3 className='inline-block'>
             {JSONData['title-sub3']}
             <Border className='w-2/3 mt-1 bg-primary' />

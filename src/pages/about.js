@@ -6,6 +6,7 @@ import { Border } from '../components/IndexPage'
 import { HeroContainer, Title } from '../components/SubIndex'
 import about from '../content/pages/about.json'
 import { Footer } from '../components/Footer'
+import { Message } from '../components/MessageBar'
 
 const About = () => {
   const data = useStaticQuery(graphql`
@@ -78,6 +79,7 @@ const About = () => {
           </Title>
           <Border thick className='w-2/3 w-2 mt-2 bg-primary' />
         </HeroContainer>
+        <Message></Message>
       </div>
       <div className='container p-8 lg:p-12 p lg:p-16'>
         <div className='md:flex items-center'>

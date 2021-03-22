@@ -7,7 +7,10 @@ import { HeroContainer, Title } from '../components/SubIndex'
 import { Footer } from '../components/Footer'
 import team from '../content/pages/team.json'
 import { CardCollapsible } from '../components/CardCollapsible'
+import { Message } from '../components/MessageBar'
 import { Modal } from '../components/Modal'
+import heroVideo from '../assets/videos/Stewart_sutherland_Web Hero - Our Team.mp4'
+import '../css/team.css'
 
 const About = () => {
   const data = useStaticQuery(graphql`
@@ -61,7 +64,7 @@ const About = () => {
           }
         }
       }
-      Five: file(relativePath: { eq: "5.jpg" }) {
+      Five: file(relativePath: { eq: "11.jpg" }) {
         childImageSharp {
           fluid(quality: 90) {
             ...GatsbyImageSharpFluid
@@ -89,14 +92,14 @@ const About = () => {
           }
         }
       }
-      Nine: file(relativePath: { eq: "9.jpg" }) {
+      Nine: file(relativePath: { eq: "12.jpg" }) {
         childImageSharp {
           fluid(quality: 90) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      Ten: file(relativePath: { eq: "10.jpg" }) {
+      Ten: file(relativePath: { eq: "13.jpg" }) {
         childImageSharp {
           fluid(quality: 90) {
             ...GatsbyImageSharpFluid
@@ -105,7 +108,7 @@ const About = () => {
       }
     }
   `)
-
+ console.log(data)
   const [dialog, setOpenDialog,] = useState('')
   const onSetOpenDialog = useCallback((name) => {
     setOpenDialog(name)
@@ -118,33 +121,26 @@ const About = () => {
     <Layout>
       <div className='relative z-0'>
         <div className='md:hidden'>
-          <Img
-            fluid={data.mobileImage.childImageSharp.fluid}
-            className='-mt-12 md:-mt-6 md:mb-0 w-full'
-            alt='hero-image'
-            style={{ height: 275, }}
-          />
+          <video className='-mt-12 md:-mt-6 md:mb-0 w-full' autoPlay loop muted>
+            <source src={heroVideo} type='video/mp4'/>
+          </video>
         </div>
         <div className='hidden md:block md:w-full'>
-          <Img
-            fluid={data.desktopImage.childImageSharp.fluid}
-            className='-mt-12 md:-mt-6 md:mb-0 w-full'
-            alt='hero-image'
-            style={{ height: 420, }}
-          />
+          <video className='-mt-12 md:-mt-6 md:mb-0 w-full' autoPlay loop muted>
+            <source src={heroVideo} type='video/mp4'/>
+          </video>
         </div>
         <HeroContainer>
           <Title className=''>{team.h1}</Title>
           <Border thick className='w-2/3 mt-2 bg-primary' />
         </HeroContainer>
+         <Message></Message>
       </div>
       <div className='container py-4 lg:py-6 lg:py-10'>
         <h1 className='text-center text-2xl text-primary my-4'>Team</h1>
         <div className='px-6 md:px-0 flex flex-wrap justify-around md:justify-between'>
-          <div className='w-32 md:w-48 md:mx-6 lg:w-64 xl:mx-12 mb-8'>
-            <div style={{minHeight: 85,}}>
-              <Img fluid={data.One.childImageSharp.fluid} alt='team-image' />
-            </div>
+          <div className='photo-margin md:w-48 md:mx-6 lg:w-64 xl:mx-12 mb-32'>
+              <Img fluid={data.One.childImageSharp.fluid} alt='team-image' className="shadow rounded-full max-w-full h-full align-middle border-none"/>
             <p className='text-center font-light'>Colleen Parran</p>
             <p className='text-center font-semibold'>President</p>
             <div className='mt-2 text-center'>
@@ -182,8 +178,8 @@ const About = () => {
             </div>
           </div>
 
-          <div className='w-32 md:w-48 md:mx-6 lg:w-64 xl:mx-12 mb-8'>
-            <Img fluid={data.Two.childImageSharp.fluid} alt='team-image' />
+          <div className='photo-margin md:w-48 md:mx-6 lg:w-64 xl:mx-12 mb-32'>
+            <Img fluid={data.Two.childImageSharp.fluid} alt='team-image' className="shadow rounded-full max-w-full h-full align-middle border-none" />
             <p className='text-center font-light'>Daniel Doan</p>
             <p className='text-center font-semibold'>Vice President of Sales</p>
             <div className='mt-2 text-center'>
@@ -209,8 +205,8 @@ const About = () => {
             </div>
           </div>
 
-          <div className='w-32 md:w-48 md:mx-6 lg:w-64 xl:mx-12 mb-8'>
-            <Img fluid={data.Three.childImageSharp.fluid} alt='team-image' />
+          <div className='photo-margin md:w-48 md:mx-6 lg:w-64 xl:mx-12 mb-32'>
+            <Img fluid={data.Three.childImageSharp.fluid} alt='team-image' className="shadow rounded-full max-w-full h-full align-middle border-none" />
             <p className='text-center font-light'>Jaima Green</p>
             <p className='text-center font-semibold'>Director of Sales</p>
             <div className='mt-2 text-center'>
@@ -235,8 +231,8 @@ const About = () => {
             </div>
           </div>
 
-          <div className='w-32 md:w-48 md:mx-6 lg:w-64 xl:mx-12 mb-8'>
-            <Img fluid={data.Four.childImageSharp.fluid} alt='team-image' />
+          <div className='photo-margin md:w-48 md:mx-6 lg:w-64 xl:mx-12 mb-32'>
+            <Img fluid={data.Four.childImageSharp.fluid} alt='team-image' className="shadow rounded-full max-w-full h-full align-middle border-none" />
             <p className='text-center font-light'>Karla Meeks</p>
             <p className='text-center font-semibold'>Head of HR</p>
             <div className='mt-2 text-center'>
@@ -265,8 +261,8 @@ const About = () => {
             </div>
           </div>
 
-          <div className='w-32 md:w-48 md:mx-6 lg:w-64 xl:mx-12 mb-8'>
-            <Img fluid={data.Five.childImageSharp.fluid} alt='team-image' />
+          <div className='photo-margin md:w-48 md:mx-6 lg:w-64 xl:mx-12 mb-32'>
+            <Img fluid={data.Five.childImageSharp.fluid} alt='team-image' className="shadow rounded-full max-w-full h-full align-middle border-none" />
             <p className='text-center font-light'>Richard Mackie</p>
             <p className='text-center font-semibold'>Controller</p>
             <div className='mt-2 text-center'>
@@ -298,8 +294,8 @@ const About = () => {
             </div>
           </div>
 
-          <div className='w-32 md:w-48 md:mx-6 lg:w-64 xl:mx-12 mb-8'>
-            <Img fluid={data.Six.childImageSharp.fluid} alt='team-image' />
+          <div className='photo-margin md:w-48 md:mx-6 lg:w-64 xl:mx-12 mb-32'>
+            <Img fluid={data.Six.childImageSharp.fluid} alt='team-image' className="shadow rounded-full max-w-full h-full align-middle border-none" />
             <p className='text-center font-light'>Carmen Bierenga</p>
             <p className='text-center font-semibold'>Warehouse & Logistics</p>
             <div className='mt-2 text-center'>
@@ -322,8 +318,8 @@ const About = () => {
             </div>
           </div>
 
-          <div className='w-32 md:w-48 md:mx-6 lg:w-64 xl:mx-12 mb-8'>
-            <Img fluid={data.Seven.childImageSharp.fluid} alt='team-image' />
+          <div className='photo-margin md:w-48 md:mx-6 lg:w-64 xl:mx-12 mb-32'>
+            <Img fluid={data.Seven.childImageSharp.fluid} alt='team-image' className="shadow rounded-full max-w-full h-full align-middle border-none"/>
             <p className='text-center font-light'>Kristina Jackson</p>
             <p className='text-center font-semibold'>Quality Control</p>
             <div className='mt-2 text-center'>
@@ -349,8 +345,8 @@ const About = () => {
             </div>
           </div>
 
-          <div className='w-32 md:w-48 md:mx-6 lg:w-64 xl:mx-12 mb-8'>
-            <Img fluid={data.Nine.childImageSharp.fluid} alt='team-image' />
+          <div className='photo-margin md:w-48 md:mx-6 lg:w-64 xl:mx-12 mb-32'>
+            <Img fluid={data.Nine.childImageSharp.fluid} alt='team-image' className="shadow rounded-full max-w-full h-full align-middle border-none"/>
             <p className='text-center font-light'>Julie Rhodes</p>
             <p className='text-center font-semibold'>Graphics Manager</p>
             <div className='mt-2 text-center'>
@@ -377,8 +373,8 @@ const About = () => {
             </div>
           </div>
 
-          <div className='w-32 md:w-48 md:mx-6 lg:w-64 xl:mx-12 mb-8'>
-            <Img fluid={data.Ten.childImageSharp.fluid} alt='team-image' />
+          <div className='photo-margin md:w-48 md:mx-6 lg:w-64 xl:mx-12 mb-32'>
+            <Img fluid={data.Ten.childImageSharp.fluid} alt='team-image' className="shadow rounded-full max-w-full h-full align-middle border-none" />
             <p className='text-center font-light'>Gene Kramer</p>
             <p className='text-center font-semibold'>
               Scheduling & Procurement Manager
