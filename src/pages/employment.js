@@ -113,7 +113,7 @@ const SecondPage = () => {
         <Message></Message>
       </div>
       <div className='video-section mt-4'>
-          <video className='video' autoPlay loop muted controls>
+          <video className='video' autoPlay playsInline loop muted controls>
             <source src={employVideo} type='video/mp4'/>
           </video>
           <div className="video-button">
