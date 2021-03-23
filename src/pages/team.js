@@ -206,7 +206,7 @@ const About = () => {
           </div>
 
           <div className='photo-margin md:w-48 md:mx-6 lg:w-64 xl:mx-12 mb-32'>
-            <Img fluid={data.Three.childImageSharp.fluid} alt='team-image' className="shadow rounded-full max-w-full h-full align-middle border-none" />
+            <Img fluid={data.Three.childImageSharp.fluid} alt='team-image' className="shadow rounded-full max-w-full h-full align-left border-none" />
             <p className='text-center font-light'>Jaima Green</p>
             <p className='text-center font-semibold'>Director of Sales</p>
             <div className='mt-2 text-center'>

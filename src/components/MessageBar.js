@@ -4,7 +4,7 @@ const Message = () =>  {
         return(
             <div className="message-section">
                 <div className="inner">
-                    <p>Thank you to essential workforce and clients for the best year ever while keeping families safe.</p>
+                    <p>To our essential staff and clients, you power the heart of our company.  Thank you for standing with us to keep our doors open and our families safe. The best is yet to come!</p>
                 </div>
             </div>
     )
