@@ -129,7 +129,7 @@ const SecondPage = () => {
               <div className="video-button">
               <Button
               variant='primary'
-              className='mt-4'
+              className='my-4'
               onClick={gotoEmploymentApp}
               >
               {content['apply-btn']}
