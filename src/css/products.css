@@ -1,3 +1,17 @@
 .product-hero {
     max-height: 400px;
+    background-color: rgba(0,0,0,1);
+}
+.product-hero img {
+    opacity: .6 !important;
+}
+.product-wrapper {
+    position: relative;
+}
+.product-title{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    z-index: 1000;
+
 }

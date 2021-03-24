@@ -1,6 +1,5 @@
 .message-section {
-    width: 100%;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0, .0);
     margin-bottom: 10px;
 }
 .message-section .inner {
@@ -8,12 +7,11 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
     text-align: center;
 }
 .message-section .inner p {
     text-align: left;
-    padding: 4px 20px;
+    padding: 4px 0px;
     text-transform: none;
     color: #f1f1f1;
     font-size: calc(14pt + .1vw);

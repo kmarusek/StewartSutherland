@@ -1,3 +1,7 @@
+.align-right img {
+    object-position: right center !important;
+}
+
 @media only screen and (max-width: 767px){
     .photo-margin{
     width: 13rem;

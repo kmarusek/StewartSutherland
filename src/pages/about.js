@@ -8,6 +8,7 @@ import about from '../content/pages/about.json'
 import { Footer } from '../components/Footer'
 import { Message } from '../components/MessageBar'
 import '../css/about.css'
+import '../css/video.css'
 import heroVideo from '../assets/videos/Stewart_Sutherland_Web Hero - Employment.mp4'
 
 const About = () => {
@@ -83,12 +84,12 @@ const About = () => {
     <Layout>
       <div className='relative z-0'>
       <div className='md:hidden'>
-          <video className='-mt-12 md:-mt-6 md:mb-0 w-full' autoPlay playsInline loop muted>
+          <video className='-mt-12 md:-mt-6 md:mb-0 w-full herovideo' autoPlay playsInline loop muted>
             <source src={heroVideo} type='video/mp4'/>
           </video>
         </div>
         <div className='hidden md:block md:w-full'>
-          <video className='-mt-12 md:-mt-6 md:mb-0 w-full' autoPlay playsInline loop muted>
+          <video className='-mt-12 md:-mt-6 md:mb-0 w-full herovideo' autoPlay playsInline loop muted>
             <source src={heroVideo} type='video/mp4'/>
           </video>
         </div>
@@ -97,8 +98,9 @@ const About = () => {
             {about['h1-s1']} 
           </Title>
           <Border thick className='w-2/3 w-2 mt-2 bg-primary' />
+          <Message></Message>
         </HeroContainer>
-        <Message></Message>
+        
       </div>
       <div className='container p-8 lg:p-12 p lg:p-16'>
         <div className='md:flex items-center'>

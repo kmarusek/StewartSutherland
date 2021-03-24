@@ -57,8 +57,9 @@ const Quality = () => {
             {about['h1-s2']} 
           </Title>
           <Border thick className='w-2/3 mt-2 bg-primary' />
+          <Message></Message>
         </HeroContainer>
-        <Message></Message>
+        
       </div>
       <div className='container p-8 lg:p-12 p lg:p-16'>
         <div className='mt-6 md:mt-10 md:flex items-center'>

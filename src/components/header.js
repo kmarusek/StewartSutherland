@@ -3,6 +3,7 @@ import { Link, useStaticQuery, graphql } from 'gatsby'
 import { slide as Menu } from 'react-burger-menu'
 import { Navs, menuConfig } from './navs'
 import MenuSvg from '../assets/svg/menu.svg'
+import MailSvg from '../assets/svg/envelope-solid.svg'
 import PhoneSvg from '../assets/svg/phone.svg'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
@@ -61,7 +62,7 @@ const Header = ({ siteTitle, }) => {
               <a className='font-sans font-light break-all cursor-pointer' href='tel:18002531034'>1-800-253-1034</a>
             </div>
             <div className='ml-8 flex items-center'>
-              <PhoneSvg className='w-4 mr-2' />
+              <MailSvg className='w-4 mr-2' />
               <a className='font-sans font-light break-all cursor-pointer' href='mailto:info@ssbags.com'>info@ssbags.com</a>
             </div>
           </div>

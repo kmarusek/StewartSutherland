@@ -114,10 +114,10 @@ const Products = ({ location, }) => {
             </p>
           </div>
         </HeroContainer>
-        <Message></Message>
+        
         
       </div>
-      <div className='container p-6'>
+      <div className='container p-0 xl:p-6 lg:p-6 md:py-24  '>
         <h1 className='text-3xl text-center'>Stock Products</h1>
         {/* <div className='flex justify-center lg:justify-end lg:mr-6 py-2'>
           <a href={fileSSCatalogue} download className='text-right mb-2 bg-gray-200 p-2 rounded'>Download Catalogue</a>
@@ -130,16 +130,18 @@ const Products = ({ location, }) => {
 
             return (
               <div className='' key={category.id}>
-                <h3 className='text-center lg:text-left text-2xl text-primary'>{category.name}</h3>
-                <div className='md:w-1/2 md:mx-auto lg:mx-0 lg:w-full'>
+                <div className='md:mx-auto lg:mx-0 lg:w-full mt-20 product-wrapper'>
+                <h3 className='text-center lg:text-left text-3xl text-white product-title'>{category.name}
+                <Border thick className='w-1/3 mt-2 bg-primary' />
+                </h3>
                   <Img fluid={data[`category_${idx+1}`].childImageSharp.fluid}
                     alt='hero-image'
-                    className='rounded product-hero'
+                    className=' sm:rounded-none md:rounded xl:rounded lg:rounded  product-hero opacity-80'
                   />
                 </div>
                 <CardWrapper className='py-4 flex justify-center lg:justify-between'>
                   {category.products.map(p => (
-                    <div key={p.id} className='mt-4 mx-auto xl:mt-0 lg:mx-0 w-48 h-24 lg:mr-6'>
+                    <div key={p.id} className='mt-4 mx-auto xl:mt-0 lg:mx-0 w-48 h-24 lg:mr-0'>
                       <Card role='button' onClick={() => onSetCategoryId(p.id)} selected={categoryId === p.id}>
                         <p className='text-center font-semibold'>{p.name}</p>
                       </Card>

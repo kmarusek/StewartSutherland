@@ -93,6 +93,7 @@ const SecondPage = () => {
         <HeroContainer>
           <Title className=''>{content.h1}</Title>
           <Border thick className='w-2/3 mt-2 bg-primary' />
+          <Message></Message>
           <div className="buttonwrap">
             <Button
               variant='primary'
@@ -110,28 +111,36 @@ const SecondPage = () => {
             </Button>
             </div>
         </HeroContainer>
-        <Message></Message>
       </div>
-      <div className='video-section mt-4'>
-          <video className='video' autoPlay playsInline loop muted controls>
-            <source src={employVideo} type='video/mp4'/>
-          </video>
-          <div className="video-button">
-            <Button
-              variant='primary'
-              className='mt-4'
-              onClick={gotoEmploymentApp}
-              >
-              {content['apply-btn']}
-            </Button>
-          </div>
-        </div>
       <div className='mt-8 container py-2 px-6 lg:px-10'>
         <h3 className='text-primary py-2 text-sm'>{content.company}</h3>
         <div className='text-3xl text-dark py-2 tracking-tight'>
           {content['title-heading']}
         </div>
         <hr className='border-primary w-32 border-t-2' />
+
+        <div className='video-section mt-4'>
+          <div className='md:flex my-10'>
+            <div className='w-full md:w-1/2 md:px-6 md:py-8 md:mr-8'>
+              <h4 className='uppercase text-dark text-2xl tracking-tight'>
+                Lorem Ipsum
+              </h4>
+              <p className='text-sm mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices tempus velit. Ut nunc nulla, imperdiet sit amet quam in, ornare gravida nibh. In quis ultricies mi. Pellentesque euismod lacus a mattis egestas. Nam commodo viverra porttitor. Proin dui augue, lacinia ut erat ac, congue malesuada diam.</p>
+              <div className="video-button">
+              <Button
+              variant='primary'
+              className='mt-4'
+              onClick={gotoEmploymentApp}
+              >
+              {content['apply-btn']}
+              </Button>
+          </div>
+            </div>
+            <video className='video employment-video' autoPlay playsInline loop muted controls>
+              <source src={employVideo} type='video/mp4'/>
+            </video>
+          </div>
+        </div>
         <div className='md:flex my-10'>
           <ImageWrapper className='w-full md:w-1/2 md:self-center lg:self-start'>
             <Img
@@ -161,7 +170,7 @@ const SecondPage = () => {
               className='h-48 lg:h-64 xl:h-full'
             />
           </ImageWrapper>
-          <div className='w-full md:w-1/2 md:px-6 md:py-8 md:ml-8'>
+          <div className='w-full md:w-1/2 md:px-6 md:py-8 md:mr-8'>
             <div className='pb-2 flex items-center pt-4 md:pt-'>
               {/* <hr className='border-primary w-12 border-t-2' />
               <p className='ml-8 text-primary uppercase text-sm'>

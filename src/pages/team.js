@@ -11,6 +11,7 @@ import { Message } from '../components/MessageBar'
 import { Modal } from '../components/Modal'
 import heroVideo from '../assets/videos/Stewart_sutherland_Web Hero - Our Team.mp4'
 import '../css/team.css'
+import '../css/video.css'
 
 const About = () => {
   const data = useStaticQuery(graphql`
@@ -121,20 +122,21 @@ const About = () => {
     <Layout>
       <div className='relative z-0'>
         <div className='md:hidden'>
-          <video className='-mt-12 md:-mt-6 md:mb-0 w-full' autoPlay playsInline loop muted>
+          <video className='-mt-12 md:-mt-6 md:mb-0 w-full herovideo' autoPlay playsInline loop muted>
             <source src={heroVideo} type='video/mp4'/>
           </video>
         </div>
         <div className='hidden md:block md:w-full'>
-          <video className='-mt-12 md:-mt-6 md:mb-0 w-full' autoPlay playsInline loop muted>
+          <video className='-mt-12 md:-mt-6 md:mb-0 w-full herovideo' autoPlay playsInline loop muted>
             <source src={heroVideo} type='video/mp4'/>
           </video>
         </div>
         <HeroContainer>
           <Title className=''>{team.h1}</Title>
           <Border thick className='w-2/3 mt-2 bg-primary' />
+          <Message></Message>
         </HeroContainer>
-         <Message></Message>
+         
       </div>
       <div className='container py-4 lg:py-6 lg:py-10'>
         <h1 className='text-center text-2xl text-primary my-4'>Team</h1>
@@ -206,7 +208,7 @@ const About = () => {
           </div>
 
           <div className='photo-margin md:w-48 md:mx-6 lg:w-64 xl:mx-12 mb-32'>
-            <Img fluid={data.Three.childImageSharp.fluid} alt='team-image' className="shadow rounded-full max-w-full h-full align-left border-none" />
+            <Img fluid={data.Three.childImageSharp.fluid} alt='team-image' className="shadow rounded-full max-w-full h-full align-right border-none right-align" />
             <p className='text-center font-light'>Jaima Green</p>
             <p className='text-center font-semibold'>Director of Sales</p>
             <div className='mt-2 text-center'>
@@ -218,7 +220,7 @@ const About = () => {
                 Bio
               </div>
               <Modal isOpen={dialog === 'three'} onRequestClose={onCloseDialog}>
-                <Img fluid={data.Three.childImageSharp.fluid} alt='team-image' className='rounded mb-4' />
+                <Img fluid={data.Three.childImageSharp.fluid} alt='team-image' className='rounded mb-4 ' />
                 <p>
                   Jaima started as a graphics assistant in 2000. She
                   transitioned to Sales Manager 2011 and in 2019 was promoted to
