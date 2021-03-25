@@ -109,7 +109,7 @@ const Products = ({ location, }) => {
             <Border thick className='w-2/3 mt-2 bg-primary' />
           </Title>
           <div className='max-w-md xl:max-w-2xl'>
-            <p className='xl:block mt-4 open-sans text-gray-100 font-thin tracking-wide text-xs md:text-sm'>
+            <p className='xl:block mt-4 open-sans text-gray-100 tracking-wide text-base md:text-base'>
             We offer a wide range of stock and custom designed products.  Our graphics department and production team can help design products specifically suited to your needs
             </p>
           </div>
