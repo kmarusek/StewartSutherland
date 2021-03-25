@@ -5,7 +5,7 @@ import tw from 'twin.macro'
 export const HeroContainer = styled.div`
   position: absolute;
   top: 35%;
-  left: 8%;
+  left: 7%;
   @media (min-width: 768px) {
     top: 30%;
     left: 15%

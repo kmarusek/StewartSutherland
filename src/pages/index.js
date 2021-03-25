@@ -124,7 +124,6 @@ const IndexPage = () => {
             </div>
           </div>
         </HeroContainer>
-        <Message></Message>
       </div>
       <div className='block px-4 mt-4 lg:px-0 lg:mt-0 lg:flex mb-8'>
         <div className='w-full xl:w-1/2 md:flex mb-4 md:mb-0'>

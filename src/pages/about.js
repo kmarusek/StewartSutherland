@@ -141,15 +141,21 @@ const About = () => {
           <div className="inner">
             <div className="image">
               <Img fluid={data.sub7.childImageSharp.fluid} alt='Colleen Parran' />
-              <h4 className='text-xl text-center text-primary mt-2'>Years?</h4> 
+              <h4 className='text-xl text-center text-primary mt-2'>Colleen Parran</h4>
+              <h4 className='text-xl text-center text-primary mt-2'>President & Ceo</h4>
+              <h4 className='text-xl text-center text-primary mt-2'>2020 - Present</h4> 
             </div>
             <div className="image">
               <Img fluid={data.sub4.childImageSharp.fluid} alt='Patty and John' />
-              <h4 className='text-xl text-center text-primary mt-2'>Years?</h4> 
+              <h4 className='text-xl text-center text-primary mt-2'>Patty & John Stewart</h4>
+              <h4 className='text-xl text-center text-primary mt-2'>Owners</h4>
+              <h4 className='text-xl text-center text-primary mt-2'>1994 - Present</h4> 
             </div>
             <div className="image">
               <Img fluid={data.sub3.childImageSharp.fluid} alt='Bob and Lou' />
-              <h4 className='text-xl text-center text-primary mt-2'>Years?</h4> 
+              <h4 className='text-xl text-center text-primary mt-2'>Bob & Barbara Stewart</h4>
+              <h4 className='text-xl text-center text-primary mt-2'>Owners</h4>
+              <h4 className='text-xl text-center text-primary mt-2'>1959 - 1994</h4> 
             </div>
           </div>
         </div>

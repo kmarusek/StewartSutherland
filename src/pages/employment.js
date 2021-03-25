@@ -70,7 +70,10 @@ const SecondPage = () => {
   const gotoEmploymentApp = useCallback(() => {
     navigate('/employmentapp')
   }, [navigate,])
-
+  
+  const sharetoFacebook = function() {
+    window.open('https://www.facebook.com/sharer/sharer.php?u=https://ssbags.com/employment');
+  };
   return (
     <Layout>
       <div className='relative z-0'>
@@ -105,8 +108,7 @@ const SecondPage = () => {
             <Button
               variant='primary'
               className='mt-4 ml-4'
-              onClick={gotoEmploymentApp}
-            >
+              onClick={sharetoFacebook}            >
               {content['share-btn']}
             </Button>
             </div>
@@ -121,20 +123,20 @@ const SecondPage = () => {
 
         <div className='video-section mt-4'>
           <div className='md:flex my-10'>
-            <div className='w-full md:w-1/2 md:px-6 md:py-8 md:mr-8'>
+            <div className='w-full md:w-1/2 md:px-6 md:py-8 md:mr-8 video-content'>
               <h4 className='uppercase text-dark text-2xl tracking-tight'>
                 Lorem Ipsum
               </h4>
               <p className='text-sm mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices tempus velit. Ut nunc nulla, imperdiet sit amet quam in, ornare gravida nibh. In quis ultricies mi. Pellentesque euismod lacus a mattis egestas. Nam commodo viverra porttitor. Proin dui augue, lacinia ut erat ac, congue malesuada diam.</p>
               <div className="video-button">
-              <Button
-              variant='primary'
-              className='my-4'
-              onClick={gotoEmploymentApp}
-              >
-              {content['apply-btn']}
-              </Button>
-          </div>
+                <Button
+                  variant='primary'
+                  className='my-4'
+                  onClick={gotoEmploymentApp}
+                >
+                {content['apply-btn']}
+                </Button>
+              </div>
             </div>
             <video className='video employment-video' autoPlay playsInline loop muted controls>
               <source src={employVideo} type='video/mp4'/>
