@@ -78,20 +78,20 @@ const IndexPage = () => {
   return (
     <Layout>
       <div className='relative z-0'>
-        <div className='md:hidden'>
+        <div className='md:hidden bg-black'>
           <Img
             fluid={data.mobileImage.childImageSharp.fluid}
             className='-mt-12 md:-mt-6 md:mb-0 w-full'
             alt='hero-image'
-            style={{ height: 324, }}
+            style={{ height: 324, opacity: .7,}}
           />
         </div>
-        <div className='hidden md:block md:w-full'>
+        <div className='hidden md:block md:w-full bg-black'>
           <Img
             fluid={data.desktopImage.childImageSharp.fluid}
             className='-mt-12 md:-mt-6 md:mb-0 w-full'
             alt='hero-image'
-            style={{height: 420,}}
+            style={{height: 420, opacity: .7,}}
           />
         </div>
         <HeroContainer>

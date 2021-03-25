@@ -1,4 +1,5 @@
 .herovideo{
     object-fit: cover;
-    max-height: 420px;
+    max-height: 26.25rem;
+    min-height: 18.75rem;
 }

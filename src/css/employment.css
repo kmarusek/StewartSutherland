@@ -1,9 +1,13 @@
-.video-section {
+.video-section .flex{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+.video-section .video-content {
+    width: 48%;
+    margin-right: 2%;
 }
 .video-section .video {
     width: 50%;
@@ -31,10 +35,17 @@
     object-fit: cover;
 }
 @media only screen and (max-width: 1025px){
+    .video-section .flex {
+        flex-direction: column-reverse;
+    }
     .video-section .video {
         width: 100%;
     }
     .employment-video {
         height: auto;
+    }
+    .video-section .video-content {
+        width: 100%;
+        margin-top: 1rem;
     }
 }

@@ -93,7 +93,7 @@ const Products = ({ location, }) => {
           <Img
             fluid={data.mobileImage.childImageSharp.fluid} 
             className='-mt-12 md:-mt-6 md:mb-0 w-full' alt='hero-image' 
-            style={{height: 275,}}
+            style={{height: 300,}}
           />
         </div>
         <div className='hidden md:block md:w-full'>
@@ -118,7 +118,6 @@ const Products = ({ location, }) => {
         
       </div>
       <div className='container p-0 xl:p-6 lg:p-6 md:py-24  '>
-        <h1 className='text-3xl text-center'>Stock Products</h1>
         {/* <div className='flex justify-center lg:justify-end lg:mr-6 py-2'>
           <a href={fileSSCatalogue} download className='text-right mb-2 bg-gray-200 p-2 rounded'>Download Catalogue</a>
         </div> */}

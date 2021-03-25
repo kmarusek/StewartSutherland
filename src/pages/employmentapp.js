@@ -39,7 +39,7 @@ const EmploymentApp = () => {
             fluid={data.mobileImage.childImageSharp.fluid}
             className='-mt-12 md:-mt-6 md:mb-0 w-full'
             alt='hero-image'
-            style={{ height: 275, }}
+            style={{ height: 300, }}
           />
         </div>
         <div className='hidden md:block md:w-full'>

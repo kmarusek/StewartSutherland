@@ -12,6 +12,7 @@ import Img from 'gatsby-image'
 import JobApplication from '../assets/pdf/Standard-Application.pdf'
 import '../css/employment.css'
 import employVideo from '../assets/videos/stewart-sutherland-recruitment-video.mp4'
+import FaceSVG from '../assets/svg/facebook-square-brands.svg'
 
 const ImageWrapper = styled.div`
   @media (min-width: 768px) {
@@ -82,7 +83,7 @@ const SecondPage = () => {
             fluid={data.mobileImage.childImageSharp.fluid}
             className='-mt-12 md:-mt-6 md:mb-0 w-full'
             alt='hero-image'
-            style={{ height: 275, }}
+            style={{ height: 300, }}
           />
         </div>
         <div className='hidden md:block md:w-full'>
@@ -97,33 +98,13 @@ const SecondPage = () => {
           <Title className=''>{content.h1}</Title>
           <Border thick className='w-2/3 mt-2 bg-primary' />
           <Message></Message>
-          <div className="buttonwrap">
-            <Button
-              variant='primary'
-              className='mt-4 ml-10'
-              onClick={gotoEmploymentApp}
-            >
-              {content['apply-btn']}
-            </Button>
-            <Button
-              variant='primary'
-              className='mt-4 ml-4'
-              onClick={sharetoFacebook}            >
-              {content['share-btn']}
-            </Button>
-            </div>
         </HeroContainer>
       </div>
       <div className='mt-8 container py-2 px-6 lg:px-10'>
-        <h3 className='text-primary py-2 text-sm'>{content.company}</h3>
-        <div className='text-3xl text-dark py-2 tracking-tight'>
-          {content['title-heading']}
-        </div>
-        <hr className='border-primary w-32 border-t-2' />
 
         <div className='video-section mt-4'>
-          <div className='md:flex my-10'>
-            <div className='w-full md:w-1/2 md:px-6 md:py-8 md:mr-8 video-content'>
+          <div className='flex my-10'>
+            <div className='video-content'>
               <h4 className='uppercase text-dark text-2xl tracking-tight'>
                 Lorem Ipsum
               </h4>
@@ -136,6 +117,13 @@ const SecondPage = () => {
                 >
                 {content['apply-btn']}
                 </Button>
+                <Button
+                  variant='primary'
+                  className='mt-4 ml-4'
+                  onClick={sharetoFacebook}>
+                <FaceSVG className='w-4 mr-2 mb-1 inline-block'></FaceSVG>
+                  {content['share-btn']}
+                </Button>
               </div>
             </div>
             <video className='video employment-video' autoPlay playsInline loop muted controls>
@@ -143,6 +131,10 @@ const SecondPage = () => {
             </video>
           </div>
         </div>
+        <div className='text-3xl text-dark py-2 tracking-tight'>
+          {content['title-heading']}
+        </div>
+        <hr className='border-primary w-32 border-t-2' />
         <div className='md:flex my-10'>
           <ImageWrapper className='w-full md:w-1/2 md:self-center lg:self-start'>
             <Img
