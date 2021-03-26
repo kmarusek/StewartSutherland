@@ -11,6 +11,7 @@ import { FooterFlag } from '../components/FooterFlag'
 import { Footer } from '../components/Footer'
 import { Message } from '../components/MessageBar'
 import '../css/menu.css'
+import '../css/home.css'
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -97,8 +98,8 @@ const IndexPage = () => {
         <HeroContainer>
           <Title indexShrink className=''>
             {JSONData.h1} <br /> {JSONData['h2-line2']}
+          <Border thick className='w-32 md:w-64 w-2 mt-2 bg-primary' />
           </Title>
-          <Border className='w-32 md:w-64 w-2 mt-2 bg-primary' />
           <div className='max-w-md xl:max-w-2xl'>
             <p className='xl:block mt-4 open-sans text-gray-100 font-thin text-xs md:text-sm'>
             We offer distribution throughout North America and work with companies large and small to
@@ -107,18 +108,21 @@ const IndexPage = () => {
             ideal partner for your food packaging needs.
             </p>
             <div className='mt-4 xl:mt-8 button-container'>
-              <Link to='/about'>
-                <Button className='uppercase' size='large'>
-                About Us
+              <Link to='/team'>
+                <Button 
+                  className='uppercase hover:bg-dark hover:text-white' 
+                  size='large'
+                  >
+                Our Team
                 </Button>
               </Link>
-              <Link to='/products'>
+              <Link to='/employment'>
                 <Button
                   className='uppercase ml-4 md:ml-8'
                   size='large'
                   variant='primary'
                 >
-                Products
+                Apply Now
                 </Button>
               </Link>
             </div>
@@ -186,14 +190,14 @@ const IndexPage = () => {
         <div className='md:w-1/2 py-4 md:p-4 lg:pt-4 text-sm md:text-base'>
           <Heading3 className='inline-block'>
             {JSONData['title-sub3']}
-            <Border className='w-2/3 mt-1 bg-primary' />
+            <Border className='w-2/3 mt-1 bg-primary bottom-border' />
           </Heading3>
           <p className='my-2'>{JSONData['content-sub3']}</p>
         </div>
       </div>
       <div className='container mx-auto px-6 mt-6 lg:mt-12'>
         <div className='flex justify-center'>
-          <div className='mb-4 inline-block -px-4 border-b-3/2 border-primary'>
+          <div className='mb-4 inline-block -px-4 border-b-2 border-primary'>
             <Heading3 className='text-xl text-center -mx-4'>
               Our history
             </Heading3>

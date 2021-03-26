@@ -10,6 +10,7 @@ import { Input, TextArea } from '../components/EmploymentAppFormSmall'
 import PhoneOutlineSvg from '../assets/svg/phone-outline.svg'
 import BuildingSvg from '../assets/svg/building.svg'
 import { Footer } from '../components/Footer'
+import { Message } from '../components/MessageBar'
 
 const Contact = () => {
   const data = useStaticQuery(graphql`
@@ -83,6 +84,7 @@ const Contact = () => {
         <HeroContainer>
           <Title className=''>{contact.h1}</Title>
           <Border thick className='w-2/3 mt-2 bg-primary' />
+          <Message></Message>
         </HeroContainer>
       </div>
       <div className='container p-8 lg:p-12 p lg:p-16'>

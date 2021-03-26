@@ -109,7 +109,6 @@ const About = () => {
       }
     }
   `)
- console.log(data)
   const [dialog, setOpenDialog,] = useState('')
   const onSetOpenDialog = useCallback((name) => {
     setOpenDialog(name)
@@ -132,11 +131,11 @@ const About = () => {
           </video>
         </div>
         <HeroContainer>
-          <Title className=''>{team.h1}</Title>
-          <Border thick className='w-2/3 mt-2 bg-primary' />
+          <Title className=''>{team.h1}
+          <Border thick className='w-1/3 mt-2 bg-primary'/>
+          </Title>
           <Message></Message>
-        </HeroContainer>
-         
+        </HeroContainer>   
       </div>
       <div className='container py-4 lg:py-6 lg:py-10'>
         <h1 className='text-center text-2xl text-primary my-4'>Team</h1>

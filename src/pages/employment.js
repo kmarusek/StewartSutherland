@@ -95,8 +95,9 @@ const SecondPage = () => {
           />
         </div>
         <HeroContainer>
-          <Title className=''>{content.h1}</Title>
-          <Border thick className='w-2/3 mt-2 bg-primary' />
+          <Title className=''>{content.h1}
+          <Border thick className='w-1/3 mt-2 bg-primary' />
+          </Title>
           <Message></Message>
         </HeroContainer>
       </div>
@@ -106,9 +107,10 @@ const SecondPage = () => {
           <div className='flex my-10'>
             <div className='video-content'>
               <h4 className='uppercase text-dark text-2xl tracking-tight'>
-                Lorem Ipsum
+                Join Our team
+                <hr className='border-primary w-32 border-t-2' />
               </h4>
-              <p className='text-sm mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices tempus velit. Ut nunc nulla, imperdiet sit amet quam in, ornare gravida nibh. In quis ultricies mi. Pellentesque euismod lacus a mattis egestas. Nam commodo viverra porttitor. Proin dui augue, lacinia ut erat ac, congue malesuada diam.</p>
+              <p className='text-sm mt-4'>Stewart Sutherland offers competitive wages, shift premiums, family benefits and on the job training. If you are searching for an opportunity to turn your job into a fast-growing career, you can start here. </p>
               <div className="video-button">
                 <Button
                   variant='primary'
@@ -121,7 +123,7 @@ const SecondPage = () => {
                   variant='primary'
                   className='mt-4 ml-4'
                   onClick={sharetoFacebook}>
-                <FaceSVG className='w-4 mr-2 mb-1 inline-block'></FaceSVG>
+                <FaceSVG className='w-4 mr-2 inline-block'></FaceSVG>
                   {content['share-btn']}
                 </Button>
               </div>

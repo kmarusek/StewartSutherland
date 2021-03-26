@@ -59,11 +59,11 @@ const Header = ({ siteTitle, }) => {
           <div className='flex justify-end mr-4 w-full'>
             <div className='flex items-center'>
               <PhoneSvg className='w-4 mr-2' />
-              <a className='font-sans font-light break-all cursor-pointer' href='tel:18002531034'>1-800-253-1034</a>
+              <a className='font-sans font-light break-all cursor-pointer hover:text-primary' href='tel:18002531034'>1-800-253-1034</a>
             </div>
             <div className='ml-8 flex items-center'>
               <MailSvg className='w-4 mr-2' />
-              <a className='font-sans font-light break-all cursor-pointer' href='mailto:info@ssbags.com'>info@ssbags.com</a>
+              <a className='font-sans font-light break-all cursor-pointer hover:text-primary' href='mailto:info@ssbags.com'>info@ssbags.com</a>
             </div>
           </div>
         </div>
