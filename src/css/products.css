@@ -15,3 +15,6 @@
     z-index: 1000;
 
 }
+.rc-table-content{
+    overflow: auto hidden !important;
+}
