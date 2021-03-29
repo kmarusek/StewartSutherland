@@ -1,7 +1,6 @@
 @tailwind components;
 
 .modal-base {
-  top: 5%;
   position: relative;
   background-color: #fefefe;
   margin: auto;
@@ -33,9 +32,9 @@
 .modal-base_after-open {
   opacity: 1;
   outline: none;
-  transform: scale(1);
-  max-height: 75vh;
-  overflow-x: auto;
+  transform: scale(.9);
+  max-height: calc(100vh - 210px);
+  overflow-y: auto;
   @apply p-6 rounded;
 }
 

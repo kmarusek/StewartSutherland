@@ -84,12 +84,12 @@ const About = () => {
     <Layout>
       <div className='relative z-0'>
       <div className='md:hidden'>
-          <video className='-mt-12 md:-mt-6 md:mb-0 w-full herovideo' autoPlay playsInline loop muted>
+          <video loading='lazy' className='-mt-12 md:-mt-6 md:mb-0 w-full herovideo' autoPlay playsInline loop muted>
             <source src={heroVideo} type='video/mp4'/>
           </video>
         </div>
         <div className='hidden md:block md:w-full'>
-          <video className='-mt-12 md:-mt-6 md:mb-0 w-full herovideo' autoPlay playsInline loop muted>
+          <video loading='lazy' className='-mt-12 md:-mt-6 md:mb-0 w-full herovideo' autoPlay playsInline loop muted>
             <source src={heroVideo} type='video/mp4'/>
           </video>
         </div>

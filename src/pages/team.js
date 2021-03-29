@@ -9,9 +9,11 @@ import team from '../content/pages/team.json'
 import { CardCollapsible } from '../components/CardCollapsible'
 import { Message } from '../components/MessageBar'
 import { Modal } from '../components/Modal'
+import { Button } from '../components/Button'
 import heroVideo from '../assets/videos/Stewart_sutherland_Web Hero - Our Team.mp4'
 import '../css/team.css'
 import '../css/video.css'
+import { FooterComponents } from 'rc-table/lib/Footer'
 
 const About = () => {
   const data = useStaticQuery(graphql`
@@ -121,12 +123,12 @@ const About = () => {
     <Layout>
       <div className='relative z-0'>
         <div className='md:hidden'>
-          <video className='-mt-12 md:-mt-6 md:mb-0 w-full herovideo' autoPlay playsInline loop muted>
+          <video loading='lazy' className='-mt-12 md:-mt-6 md:mb-0 w-full herovideo' autoPlay playsInline loop muted>
             <source src={heroVideo} type='video/mp4'/>
           </video>
         </div>
         <div className='hidden md:block md:w-full'>
-          <video className='-mt-12 md:-mt-6 md:mb-0 w-full herovideo' autoPlay playsInline loop muted>
+          <video  loading='lazy' className='-mt-12 md:-mt-6 md:mb-0 w-full herovideo' autoPlay playsInline loop muted>
             <source src={heroVideo} type='video/mp4'/>
           </video>
         </div>
@@ -175,6 +177,16 @@ const About = () => {
                   leader’s job is to look into the future and see the
                   organization, not as it is, but as it should be.”
                 </p>
+                <div className="flex justify-center">
+                <Button 
+                  className='uppercase hover:bg-dark m-auto mt-4' 
+                  size='modal'
+                  variant='primary'
+                  onClick={onCloseDialog}
+                  >
+                 Close
+                </Button>
+                </div>
               </Modal>
             </div>
           </div>
@@ -202,6 +214,16 @@ const About = () => {
                   the company’s growth to the benefit of our customers and
                   employees.
                 </p>
+                <div className="flex justify-center">
+                <Button 
+                  className='uppercase hover:bg-dark m-auto mt-4' 
+                  size='modal'
+                  variant='primary'
+                  onClick={onCloseDialog}
+                  >
+                 Close
+                </Button>
+                </div>
               </Modal>
             </div>
           </div>
@@ -228,6 +250,16 @@ const About = () => {
                   highest profile clients and provides full time support to our
                   outside sales reps.
                 </p>
+                <div className="flex justify-center">
+                <Button 
+                  className='uppercase hover:bg-dark m-auto mt-4' 
+                  size='modal'
+                  variant='primary'
+                  onClick={onCloseDialog}
+                  >
+                 Close
+                </Button>
+                </div>
               </Modal>
             </div>
           </div>
@@ -254,10 +286,20 @@ const About = () => {
                   Manager for Anserteam, helping to earn them their WBENC
                   Certification, making them the first and only WBENC certified
                   North American diversity staffing alliance. Prior to joining
-                  Stewart Sutherland was HR for a plastics manufacturing firm in
+                  Stewart Sutherland Karla was the HR Manager for a plastics manufacturing firm in
                   Spring Lake. Born and raised in Coopersville, proud mama of
                   Jack and Jaime, who both live in Minneapolis, MN.
                 </p>
+                <div className="flex justify-center">
+                <Button 
+                  className='uppercase hover:bg-dark m-auto mt-4' 
+                  size='modal'
+                  variant='primary'
+                  onClick={onCloseDialog}
+                  >
+                 Close
+                </Button>
+                </div>
               </Modal>
             </div>
           </div>
@@ -291,6 +333,16 @@ const About = () => {
                   you will find him out enjoying one of the many beautiful local
                   bicycle trails.
                 </p>
+                <div className="flex justify-center">
+                <Button 
+                  className='uppercase hover:bg-dark m-auto mt-4' 
+                  size='modal'
+                  variant='primary'
+                  onClick={onCloseDialog}
+                  >
+                 Close
+                </Button>
+                </div>
               </Modal>
             </div>
           </div>
@@ -315,6 +367,16 @@ const About = () => {
                   oversees 3 warehouse employees and works in lock step with
                   production and sales to ensure our customers’ needs are met.
                 </p>
+                <div className="flex justify-center">
+                <Button 
+                  className='uppercase hover:bg-dark m-auto mt-4' 
+                  size='modal'
+                  variant='primary'
+                  onClick={onCloseDialog}
+                  >
+                 Close
+                </Button>
+                </div>
               </Modal>
             </div>
           </div>
@@ -338,10 +400,19 @@ const About = () => {
                   into production support. She was then trained as a machine
                   operator for flat sheets. She moved fluidly between packing,
                   production support and machine operating, while also being
-                  cross trained in the shipping/receiving warehouse. She worked
-                  there until 2016. It was in 2016 that she was promoted to the
+                  cross trained in the shipping/receiving warehouse. In 2016 she was promoted to the
                   management team and became head of Quality Control.
                 </p>
+                <div className="flex justify-center">
+                <Button 
+                  className='uppercase hover:bg-dark m-auto mt-4' 
+                  size='modal'
+                  variant='primary'
+                  onClick={onCloseDialog}
+                  >
+                 Close
+                </Button>
+                </div>
               </Modal>
             </div>
           </div>
@@ -370,6 +441,16 @@ const About = () => {
                   School for Graphic Design Senior Mentor- ship program. Hobbies
                   include photography, gardening and outdoor activities.
                 </p>
+                <div className="flex justify-center">
+                <Button 
+                  className='uppercase hover:bg-dark m-auto mt-4' 
+                  size='modal'
+                  variant='primary'
+                  onClick={onCloseDialog}
+                  >
+                 Close
+                </Button>
+                </div>
               </Modal>
             </div>
           </div>
@@ -401,6 +482,16 @@ const About = () => {
                   including golf, hunting and fishing. Gene also enjoys spending
                   time with his family of six.
                 </p>
+                <div className="flex justify-center">
+                  <Button 
+                  className='uppercase hover:bg-dark m-auto mt-4' 
+                  size='modal'
+                  variant='primary'
+                  onClick={onCloseDialog}
+                  >
+                 Close
+                  </Button>
+                </div>
               </Modal>
             </div>
           </div>
