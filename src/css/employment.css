@@ -11,6 +11,7 @@
 }
 .video-section .video {
     width: 50%;
+    outline: none;
 }
 .video-section .video-button {
     width: 100%;
