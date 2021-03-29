@@ -2,19 +2,18 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 .video-section .video-content {
     width: 48%;
-    margin-right: 2%;
+    margin: 2% 2% 0 0;
 }
 .video-section .video {
     width: 50%;
 }
 .video-section .video-button {
     width: 100%;
-    text-align: center;
 }
 .bottom-section {
     display: flex;
