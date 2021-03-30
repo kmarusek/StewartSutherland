@@ -42,14 +42,14 @@ const About = () => {
           }
         }
       }
-      sub3: file(relativePath: { eq: "about_bobandbarbara.jpg" }) {
+      sub3: file(relativePath: { eq: "bob_barbara.png" }) {
         childImageSharp {
           fluid (quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      sub4: file(relativePath: { eq: "Portrait.png" }) {
+      sub4: file(relativePath: { eq: "patty_john.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -70,7 +70,7 @@ const About = () => {
           }
         }
       }
-      sub7: file(relativePath: { eq: "14.jpg" }) {
+      sub7: file(relativePath: { eq: "colleen.png" }) {
         childImageSharp {
           fluid (quality: 100) {
             ...GatsbyImageSharpFluid
@@ -140,7 +140,7 @@ const About = () => {
         <div className='container p-16 lg:flex lg:items-center'>
           <div className="inner">
             <div className="image">
-              <Img fluid={data.sub7.childImageSharp.fluid} alt='Colleen Parran'className="bottom-image bi-1" />
+              <Img fluid={data.sub7.childImageSharp.fluid} alt='Colleen Parran'/>
               <h4 className='text-xl text-center text-primary mt-2'>Colleen Parran</h4>
               <h4 className='text-xl text-center text-primary mt-2'>President & Ceo</h4>
               <h4 className='text-xl text-center text-primary mt-2'>2020 - Present</h4> 
@@ -152,7 +152,7 @@ const About = () => {
               <h4 className='text-xl text-center text-primary mt-2'>1994 - Present</h4> 
             </div>
             <div className="image">
-              <Img fluid={data.sub3.childImageSharp.fluid} alt='Bob and Lou' className="bottom-image bi-2"/>
+              <Img fluid={data.sub3.childImageSharp.fluid} alt='Bob and Lou'/>
               <h4 className='text-xl text-center text-primary mt-2'>Bob & Barbara Stewart</h4>
               <h4 className='text-xl text-center text-primary mt-2'>Owners</h4>
               <h4 className='text-xl text-center text-primary mt-2'>1959 - 1994</h4> 
