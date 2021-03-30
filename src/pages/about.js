@@ -96,7 +96,7 @@ const About = () => {
         <HeroContainer>
           <Title className=''>
             {about['h1-s1']} 
-          <Border thick className='w-1/3 w-2 mt-2 bg-primary' />
+          <Border thick className='mt-2 bg-primary' />
           </Title>
           <Message></Message>
         </HeroContainer>

@@ -43,8 +43,12 @@ export const Title = styled.h1`
 `
 
 export const Border = styled.hr`
-  height: 1.5px;
+  height: 2.5px;
+  width: 24rem;
   border-top-width: 0;
+  @media (max-width: 740px){
+    width: 12rem;
+  }
   ${(props) => props.thick && 'height: 2.5px;'}
 `
 

@@ -28,14 +28,14 @@ const CardWrapper = styled.div`
 const Products = ({ location, }) => {
   const data = useStaticQuery(graphql`
     query {
-      mobileImage: file(relativePath: { eq: "222-Products-Banner-original.jpg" }) {
+      mobileImage: file(relativePath: { eq: "20200203-05_US_Stewart_Sutherland-190b.jpg" }) {
         childImageSharp {
           fluid (quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      desktopImage: file(relativePath: { eq: "222-Products-Banner-original.jpg" }) {
+      desktopImage: file(relativePath: { eq: "20200203-05_US_Stewart_Sutherland-190b.jpg" }) {
         childImageSharp {
           # Specify a fixed image and fragment.
           # The default width is 400 pixels
@@ -106,7 +106,7 @@ const Products = ({ location, }) => {
         <HeroContainer>
           <Title className='inline-block'>
             Products 
-            <Border thick className='w-2/3 mt-2 bg-primary' />
+            <Border thick className='mt-2 bg-primary' />
           </Title>
           <div className='max-w-md xl:max-w-2xl'>
             <p className='xl:block mt-4 open-sans text-gray-100 tracking-wide text-base md:text-base'>

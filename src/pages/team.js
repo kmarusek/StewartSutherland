@@ -134,7 +134,7 @@ const About = () => {
         </div>
         <HeroContainer>
           <Title className=''>{team.h1}
-          <Border thick className='w-1/3 mt-2 bg-primary'/>
+          <Border thick className='mt-2 bg-primary'/>
           </Title>
           <Message></Message>
         </HeroContainer>   

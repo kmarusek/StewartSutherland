@@ -98,7 +98,7 @@ const IndexPage = () => {
         <HeroContainer>
           <Title indexShrink className=''>
             {JSONData.h1} <br /> {JSONData['h2-line2']}
-          <Border thick className='w-32 md:w-64 w-2 mt-2 bg-primary' />
+          <Border thick className='mt-2 bg-primary' />
           </Title>
           <div className='max-w-md xl:max-w-2xl'>
             <p className='xl:block mt-4 open-sans text-gray-100 font-thin text-xs md:text-sm'>
@@ -138,11 +138,11 @@ const IndexPage = () => {
               className='h-full lg:h-64 xl:h-full'
             />
           </div>
-          <div className='md:w-1/2 py-4 md:py-0 md:px-6'>
+          <div className='md:w-1/2 py-4 md:py-0 md:px-6 lg:pt-4'>
             <Heading3 className='lg:mt-6 mb-1 inline-block'>
               {JSONData['title-left-sub1']}
-              <Border className='w-2/3 mt-1 bg-primary' />
             </Heading3>
+            <Border className='w-2/3 mt-1 bg-primary' />
             <p className='mt-2'>
               {JSONData['content-left-sub1']}
             </p>
@@ -156,11 +156,11 @@ const IndexPage = () => {
               className='h-48 lg:h-64 xl:h-full'
             />
           </div>
-          <div className='md:w-1/2 py-4 md:py-0 md:px-6'>
+          <div className='md:w-1/2 py-4 md:py-0 md:px-6 lg:pt-4'>
             <Heading3 className='lg:mt-6 mb-1 inline-block'>
               {JSONData['title-right-sub1']}
-              <Border className='w-2/3 mt-1 bg-primary' />
             </Heading3>
+            <Border className='w-2/3 mt-1 bg-primary' />
             <p className='mt-2'>
               {JSONData['content-right-sub1']}
             </p>
@@ -171,11 +171,11 @@ const IndexPage = () => {
         <div className='md:w-1/2'>
           <Img fluid={sourceSub2} alt='product' className='xl:h-full' />
         </div>
-        <div className='md:w-1/2 py-4 md:p-4 lg:pt-4 text-sm md:text-base'>
-          <Heading3 className='inline-block'>
+        <div className='md:py-0 md:px-6 md:w-1/2 py-4 md:p-4 lg:pt-4 text-sm md:text-base'>
+          <Heading3 className='lg:mt-6 inline-block'>
             {JSONData['title-sub2']}
-            <Border className='w-2/3 mt-1 bg-primary' />
           </Heading3>
+          <Border className='w-2/3 mt-1 bg-primary' />
           <p className='my-2'>{JSONData['content-sub2']}</p>
         </div>
       </div>
@@ -187,11 +187,11 @@ const IndexPage = () => {
             className='xl:h-full'
           />
         </div>
-        <div className='md:w-1/2 py-4 md:p-4 lg:pt-4 text-sm md:text-base'>
-          <Heading3 className='inline-block'>
+        <div className='md:w-1/2 py-4 md:p-4 pt-0 text-sm md:text-base'>
+          <Heading3 className='lg:mt-6 inline-block'>
             {JSONData['title-sub3']}
-            <Border className='w-2/3 mt-1 bg-primary bottom-border' />
           </Heading3>
+          <Border className='w-2/3 mt-1 bg-primary bottom-border' />
           <p className='my-2'>{JSONData['content-sub3']}</p>
         </div>
       </div>

@@ -96,7 +96,7 @@ const SecondPage = () => {
         </div>
         <HeroContainer>
           <Title className=''>{content.h1}
-          <Border thick className='w-1/3 mt-2 bg-primary' />
+          <Border thick className='mt-2 bg-primary' />
           </Title>
           <Message></Message>
         </HeroContainer>
@@ -105,7 +105,7 @@ const SecondPage = () => {
 
         <div className='video-section mt-4'>
           <div className='flex mt-10 '>
-            <div className='video-content pt-4 mr-8'>
+            <div className='video-content w-full md:w-1/2 md:px-6 md:py-8 md:mr-8'>
               <h4 className='uppercase text-dark text-2xl tracking-tight'>
                 Join Our team
                 <hr className='border-primary w-32 border-t-2' />

@@ -52,7 +52,7 @@ const EmploymentApp = () => {
         </div>
         <HeroContainer>
           <Title className=''>Career
-          <Border thick className='w-2/3 mt-2 bg-primary' />
+          <Border thick className='mt-2 bg-primary' />
           </Title>
           <Message></Message>
         </HeroContainer>

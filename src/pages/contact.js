@@ -83,7 +83,7 @@ const Contact = () => {
         </div>
         <HeroContainer>
           <Title className=''>{contact.h1}</Title>
-          <Border thick className='w-2/3 mt-2 bg-primary' />
+          <Border thick className='mt-2 bg-primary' />
           <Message></Message>
         </HeroContainer>
       </div>
