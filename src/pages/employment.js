@@ -104,8 +104,8 @@ const SecondPage = () => {
       <div className='mt-8 container py-2 px-6 lg:px-10'>
 
         <div className='video-section mt-4'>
-          <div className='flex my-10'>
-            <div className='video-content'>
+          <div className='flex mt-10 '>
+            <div className='video-content pt-4 mr-8'>
               <h4 className='uppercase text-dark text-2xl tracking-tight'>
                 Join Our team
                 <hr className='border-primary w-32 border-t-2' />

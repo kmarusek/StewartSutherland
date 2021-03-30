@@ -13,7 +13,10 @@
 .image:nth-child(3){
     margin-right: 0;
 }
-
+.bottom-image {
+    height: 19.16vw !important;
+    border-radius: 50%;
+}
 
 @media only screen and (max-width: 1279px){
     .image{

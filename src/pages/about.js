@@ -9,7 +9,7 @@ import { Footer } from '../components/Footer'
 import { Message } from '../components/MessageBar'
 import '../css/about.css'
 import '../css/video.css'
-import heroVideo from '../assets/videos/Stewart_Sutherland_Web Hero - Employment.mp4'
+import heroVideo from '../assets/videos/Web Hero - Employment - 1920x420.mp4'
 
 const About = () => {
   const data = useStaticQuery(graphql`
@@ -140,7 +140,7 @@ const About = () => {
         <div className='container p-16 lg:flex lg:items-center'>
           <div className="inner">
             <div className="image">
-              <Img fluid={data.sub7.childImageSharp.fluid} alt='Colleen Parran' />
+              <Img fluid={data.sub7.childImageSharp.fluid} alt='Colleen Parran'className="bottom-image bi-1" />
               <h4 className='text-xl text-center text-primary mt-2'>Colleen Parran</h4>
               <h4 className='text-xl text-center text-primary mt-2'>President & Ceo</h4>
               <h4 className='text-xl text-center text-primary mt-2'>2020 - Present</h4> 
@@ -152,7 +152,7 @@ const About = () => {
               <h4 className='text-xl text-center text-primary mt-2'>1994 - Present</h4> 
             </div>
             <div className="image">
-              <Img fluid={data.sub3.childImageSharp.fluid} alt='Bob and Lou' />
+              <Img fluid={data.sub3.childImageSharp.fluid} alt='Bob and Lou' className="bottom-image bi-2"/>
               <h4 className='text-xl text-center text-primary mt-2'>Bob & Barbara Stewart</h4>
               <h4 className='text-xl text-center text-primary mt-2'>Owners</h4>
               <h4 className='text-xl text-center text-primary mt-2'>1959 - 1994</h4> 
