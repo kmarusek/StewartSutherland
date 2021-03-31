@@ -43,7 +43,7 @@ export const Title = styled.h1`
 `
 
 export const Border = styled.hr`
-  height: 2.5px;
+  height: .25rem;
   width: 24rem;
   border-top-width: 0;
   @media (max-width: 740px){
@@ -51,6 +51,13 @@ export const Border = styled.hr`
   }
   ${(props) => props.thick && 'height: 2.5px;'}
 `
+export const Border2 = styled.hr`
+  width: 20rem;
+  bord-top-width: 0;
+  @media (max-width: 740px){
+    width: 12rem;
+  }
+  `
 
 export const ImageSub = styled.img`
   max-height: 450px;

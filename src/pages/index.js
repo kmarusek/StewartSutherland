@@ -3,7 +3,7 @@ import { useStaticQuery, graphql, navigate, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import JSONData from '../content/pages/index.json'
-import { HeroContainer, Title, Border } from '../components/IndexPage'
+import { HeroContainer, Title, Border, Border2 } from '../components/IndexPage'
 import { Button } from '../components/Button'
 import { Heading3 } from '../components/Text'
 import { IndexCarousel } from '../components/IndexCarousel'
@@ -142,7 +142,7 @@ const IndexPage = () => {
             <Heading3 className='lg:mt-6 mb-1 inline-block'>
               {JSONData['title-left-sub1']}
             </Heading3>
-            <Border className='w-2/3 mt-1 bg-primary' />
+            <Border2 className='h-1 mt-1 bg-primary' />
             <p className='mt-2'>
               {JSONData['content-left-sub1']}
             </p>
@@ -160,7 +160,7 @@ const IndexPage = () => {
             <Heading3 className='lg:mt-6 mb-1 inline-block'>
               {JSONData['title-right-sub1']}
             </Heading3>
-            <Border className='w-2/3 mt-1 bg-primary' />
+            <Border2 className='h-1 mt-1 bg-primary' />
             <p className='mt-2'>
               {JSONData['content-right-sub1']}
             </p>
@@ -172,10 +172,10 @@ const IndexPage = () => {
           <Img fluid={sourceSub2} alt='product' className='xl:h-full' />
         </div>
         <div className='md:py-0 md:px-6 md:w-1/2 py-4 md:p-4 lg:pt-4 text-sm md:text-base'>
-          <Heading3 className='lg:mt-6 inline-block'>
+          <Heading3 className='lg:mt-6 mb-1 inline-block'>
             {JSONData['title-sub2']}
           </Heading3>
-          <Border className='w-2/3 mt-1 bg-primary' />
+          <Border2 className='h-1 mt-1 bg-primary' />
           <p className='my-2'>{JSONData['content-sub2']}</p>
         </div>
       </div>
@@ -187,11 +187,11 @@ const IndexPage = () => {
             className='xl:h-full'
           />
         </div>
-        <div className='md:w-1/2 py-4 md:p-4 pt-0 text-sm md:text-base'>
-          <Heading3 className='lg:mt-6 inline-block'>
+        <div className='md:py-0 md:px-6  md:w-1/2   py-4 md:p-4 lg:pt-4 text-sm md:text-base'>
+          <Heading3 className='lg:mt-6 mb-1 inline-block'>
             {JSONData['title-sub3']}
           </Heading3>
-          <Border className='w-2/3 mt-1 bg-primary bottom-border' />
+          <Border2 className='h-1 mt-1 bg-primary' />
           <p className='my-2'>{JSONData['content-sub3']}</p>
         </div>
       </div>
