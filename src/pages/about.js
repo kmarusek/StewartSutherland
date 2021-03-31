@@ -10,6 +10,7 @@ import { Message } from '../components/MessageBar'
 import '../css/about.css'
 import '../css/video.css'
 import heroVideo from '../assets/videos/Web Hero - Employment - 1920x420.mp4'
+import heroVideoMobal from '../assets/videos/Stewart_Sutherland_Web Hero - Employment.mp4'
 
 const About = () => {
   const data = useStaticQuery(graphql`
@@ -85,7 +86,7 @@ const About = () => {
       <div className='relative z-0'>
       <div className='md:hidden'>
           <video loading='lazy' className='-mt-12 md:-mt-6 md:mb-0 w-full herovideo' autoPlay playsInline loop muted>
-            <source src={heroVideo} type='video/mp4'/>
+            <source src={heroVideoMobal} type='video/mp4'/>
           </video>
         </div>
         <div className='hidden md:block md:w-full'>
