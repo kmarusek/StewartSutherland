@@ -49,7 +49,7 @@ export const Border = styled.hr`
   @media (max-width: 740px){
     width: 12rem;
   }
-  ${(props) => props.thick && 'height: 2.5px;'}
+  ${(props) => props.thick && 'height: .25rem;'}
 `
 export const Border2 = styled.hr`
   width: 20rem;
